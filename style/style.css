@@ -535,6 +535,7 @@ a {
 
     .project-img {
         min-width: 98%;
+        max-width: 98%;
         max-height: 215px;
         margin: 0;
     }
