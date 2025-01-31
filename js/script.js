@@ -28,3 +28,12 @@ const navLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+
+function forceDownload() {
+        const link = document.createElement('a');
+        link.href = 'assets/resume.pdf';
+        link.download = 'My_Resume.pdf'; // Force download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }

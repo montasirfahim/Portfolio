@@ -102,8 +102,47 @@
 
 
     <section id="projects">
-        <h1>Projects</h1>
-        <p>Showcase your projects here...</p>
+        <h1 style="margin-bottom: 10px;">My Projects</h1>
+        <div class="separator"></div>
+
+
+        <div class="projects-container">
+
+            <a href="https://github.com/montasirfahim/Contest-App-using-Python-Django" target="_blank">
+            <div class="project"> 
+                <img src="assets/project-django.png" alt="Contest app Preview" class="project-img">
+                <p class="project-name">A Django Web Application</p>
+                <p class="project-desc">Web based Programming Contest Management application for any university to handle problem setting, submitting and approving.</p>
+            </div>
+            </a>
+
+             <a href="https://github.com/montasirfahim/Portfolio" target="_blank">
+            <div class="project"> 
+                <img src="assets/project-portfolio.png" alt="Image not found" class="project-img">
+                <p class="project-name">My Portfolio</p>
+                 <p class="project-desc">This is my personal portfolio website to showcase my skills, projects and personal contact informations.</p>
+            </div>
+            </a>
+
+            <a href="https://github.com/montasirfahim/CGPA-Calculator-Web-Application" target="_blank">
+            <div class="project"> 
+                <img src="assets/project-cgpa.png" alt="CGPA Calculator" class="project-img">
+                <p class="project-name">CGPA Calculator</p>
+                <p class="project-desc">A Javascript Based Web Application which allows users to calculate their GPA and download a Grade Sheet as pdf</p>
+            </div>
+            </a>
+
+             <a href="https://github.com/montasirfahim/CPU-and-Disk-Scheduling-Simulator" target="_blank">
+            <div class="project"> 
+                <img src="assets/project-os.png" style="width:100%;" alt="Preview Image" class="project-img">
+                <p class="project-name">A JavaFx Desktop Application</p>
+                <p class="project-desc">CPU, Disk & Page Scheduling Simulator with Memory management and Deadlock management Algorithm solver</p>
+            </div>
+            </a>
+
+
+        </div>
+
     </section>
 
     <section id="social">
@@ -161,14 +200,49 @@
     </section>
 
     <section id="about">
-        <h1>About Me</h1>
-        <p>Write something about yourself here...</p>
+        <h1 style="margin-bottom: 10px;">About Me</h1>
+        <div class="separator"></div>
+        <p style="font-size: 1.1rem;">This is Fahim, currently studying in B.Sc(Engineering) in Information Technology at 
+            <a href="https://www.mbstu.ac.bd/" target="_blank" style="text-decoration: none; color: wheat;">
+            <b>Mawlana Bhashani Science and Technology University(MBSTU),</b> </a>
+            Tangail, Bangladesh.
+        </p>
+        <h4 style="margin-top: 40px;">If you would like to know more about me: </h4>
+
+        <div class="btnAbout">
+             <button class="btnHome" onclick="window.open('assets/resume.pdf', '_blank')">
+                View My Resume <i class="fa-solid fa-eye"></i>
+            </button>
+
+          <button class="btnHome" onclick="forceDownload()">
+            Download My Resume <i class="fa-solid fa-download"></i>
+        </button>
+
+        </div>
     </section>
 
     <section id="contact">
-        <h1>Contact</h1>
-        <p>Provide your contact details...</p>
+        <h1 style="margin-bottom: 10px;">Contact Me</h1>
+        <div class="separator"></div>
+        <p>Feel free to reach out by filling out the form below, and I will get back to you as soon as possible!</p>
+
+        <form action="https://formspree.io/f/xvgzrkgr" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
     </section>
+
 
     <script src="js/script.js"></script>
 </body>
